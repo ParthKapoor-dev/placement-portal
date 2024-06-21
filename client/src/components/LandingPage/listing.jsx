@@ -10,7 +10,7 @@ export default function Listing({ data }) {
   }
   
   return (
-    <div className="p-4 bg-white min-w-[18vw] h-[18vw]">
+    <div className="p-4 bg-white min-w-[18vw] h-[18vw] max-md:min-w-[60vw] max-md:h-[60vw]">
       <div className="flex gap-2">
         <img src={data.logo} className="h-10" />
         <p className="flex justify-center items-center">

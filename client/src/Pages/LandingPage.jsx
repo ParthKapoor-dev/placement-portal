@@ -7,13 +7,13 @@ import CompanyLogo1 from "@/../public/companyLogo1.png"
 export default function LandingPage() {
 
   return (
-    <div className="flex ">
-      <div className="w-[60vw] gap-4 flex flex-col">
+    <div className="flex max-md:flex-col max-md:gap-8">
+      <div className="w-[60vw] gap-4 flex flex-col max-md:w-full">
         <NewListings />
         <UpdatesDiv jobs={appliedJobs} />
       </div>
 
-      <div className="w-[20vw]">
+      <div className="w-[20vw] max-md:w-full">
         <MiscSection />
       </div>
     </div>

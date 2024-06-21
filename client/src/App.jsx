@@ -18,7 +18,7 @@ export default function App() {
 
       <div className="flex">
         <Sidebar />
-        <div className="px-[6rem] py-[4rem]">
+        <div className="px-[6rem] py-[4rem] max-md:px-6 max-md:py-4">
           <Routes>
             <Route path="/" element={user ? <LandingPage /> : <Navigate to="/auth/login" />} />
             <Route path="/company/:id" element={user ? <ListingPage /> : <Navigate to="/auth/login" />} />

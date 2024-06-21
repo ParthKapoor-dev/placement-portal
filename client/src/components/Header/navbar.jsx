@@ -22,13 +22,13 @@ export default function Navbar() {
   }
 
   return (
-    <div className="bg-white shadow-md flex h-[10vh] items-center justify-between text-lg">
+    <div className="bg-white shadow-md flex h-[8vh] items-center justify-between text-lg max-md:justify-normal max-md:gap-[3rem]">
       
-      <div className="z-10 w-[20vw]">
-        <img src={ThaparIcon} className="h-[10vh] w-[10vh]" />
+      <div className="w-[20vw] max-md:w-fit">
+        <img src={ThaparIcon} className="h-[10vh] w-[10vh] max-md:h-[8vh] max-md:w-[8vh]" />
       </div>
 
-      <div className="flex items-center w-[20vw] text-3xl text-red-600 font-semibold">
+      <div className="flex items-center w-[20vw] max-md:w-fit text-3xl max-md:text-2xl text-red-600 font-semibold">
         <Link to="/" className="">
           Placement Portal
         </Link>
@@ -37,7 +37,7 @@ export default function Navbar() {
 
 
       {user ? (
-        <div className="flex gap-8 w-[15vw] ">
+        <div className="flex gap-8 w-[15vw] max-md:hidden ">
           <ThemeSwitch />
 
           <Link to="/" onClick={handleUserClick}>
@@ -49,7 +49,7 @@ export default function Navbar() {
           </div>
         </div>
       ) : (
-          <div className="flex gap-8 w-[15vw]">
+          <div className="flex gap-8 w-[15vw] max-md:hidden">
             <ThemeSwitch />
 
             <Link to="/auth/login">

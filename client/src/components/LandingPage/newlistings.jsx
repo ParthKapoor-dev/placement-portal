@@ -8,7 +8,7 @@ export default function NewListings() {
         New Listings for you
       </div>
 
-      <div className="flex gap-3 w-[58vw] overflow-x-scroll">
+      <div className="flex justify-center gap-3 w-[58vw] overflow-x-scroll max-md:w-[90vw] max-md:justify-normal">
         {listings.map(item => (
           <Listing data={item} />
         ))}

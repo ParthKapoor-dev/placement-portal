@@ -54,35 +54,35 @@ export default function ListingPage() {
         New Listing for you
       </div>
 
-      <div className="bg-white px-8 py-4 w-[70vw] mb-4">
+      <div className="bg-white px-8 py-4 w-[70vw] mb-4 max-md:w-full">
         <div className="flex gap-2">
           <img src={data.logo} className="h-20" />
-          <p className="flex justify-center items-center text-4xl font-semibold text-slate-600">
+          <p className="flex justify-center items-center text-4xl font-semibold text-slate-600 max-md:text-2xl">
             {data.title}
           </p>
         </div>
 
         <div className="flex gap-16 mt-10">
           <div className="text-slate-400 flex flex-col gap-2">
-            <p>Role</p>
-            <p>CTC</p>
-            <p>Location</p>
-            <p>Info Field</p>
-            <p>Info Field</p>
-            <p>Info Field</p>
-            <p>Info Field</p>
-            <p>Apply Before</p>
+            <p className="max-md:h-12">Role</p>
+            <p className="max-md:h-12">CTC</p>
+            <p className="max-md:h-12">Location</p>
+            <p className="max-md:h-12">Info Field</p>
+            <p className="max-md:h-12">Info Field</p>
+            <p className="max-md:h-12">Info Field</p>
+            <p className="max-md:h-12">Info Field</p>
+            <p className="max-md:h-12">Apply Before</p>
 
           </div>
           <div className="text-black font-semibold flex flex-col gap-2">
-            <p>{data.details.role}</p>
-            <p>{data.details.salary}</p>
-            <p>{data.details.location}</p>
-            <p>{data.details.infoField}</p>
-            <p>{data.details.infoField}</p>
-            <p>{data.details.infoField}</p>
-            <p>{data.details.infoField}</p>
-            <p>{data.submissionDate}</p>
+            <p className="max-md:h-12">{data.details.role}</p>
+            <p className="max-md:h-12">{data.details.salary}</p>
+            <p className="max-md:h-12">{data.details.location}</p>
+            <p className="max-md:h-12">{data.details.infoField}</p>
+            <p className="max-md:h-12">{data.details.infoField}</p>
+            <p className="max-md:h-12">{data.details.infoField}</p>
+            <p className="max-md:h-12">{data.details.infoField}</p>
+            <p className="max-md:h-12">{data.submissionDate}</p>
 
           </div>
         </div>
@@ -90,11 +90,11 @@ export default function ListingPage() {
       </div>
 
 
-      <div className="flex gap-4 mt-4">
+      <div className="flex gap-4 mt-4 max-md:flex-col ">
         <Dialog>
 
           <DialogTrigger>
-            <Button className="">
+            <Button className="max-md:w-full">
               {file ? (
                 file.name
               ) : (
@@ -105,7 +105,7 @@ export default function ListingPage() {
             </Button>
           </DialogTrigger>
 
-          <DialogContent className="sm:max-w-[425px]">
+          <DialogContent className="max-md:w-[80vw]">
             <div className="text-lg "> 
               Upload Your Resume Here
             </div>
