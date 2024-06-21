@@ -54,35 +54,35 @@ export default function ListingPage() {
         New Listing for you
       </div>
 
-      <div className="bg-white px-8 py-4 w-[70vw] mb-4 max-md:w-full">
+      <div className="bg-white dark:bg-neutral-800 px-8 py-4 w-[70vw] mb-4 max-md:w-full">
         <div className="flex gap-2">
           <img src={data.logo} className="h-20" />
-          <p className="flex justify-center items-center text-4xl font-semibold text-slate-600 max-md:text-2xl">
+          <p className="flex justify-center items-center text-4xl font-semibold text-slate-600 dark:text-white max-md:text-2xl">
             {data.title}
           </p>
         </div>
 
         <div className="flex gap-16 mt-10">
           <div className="text-slate-400 flex flex-col gap-2">
-            <p className="max-md:h-12">Role</p>
-            <p className="max-md:h-12">CTC</p>
-            <p className="max-md:h-12">Location</p>
-            <p className="max-md:h-12">Info Field</p>
-            <p className="max-md:h-12">Info Field</p>
-            <p className="max-md:h-12">Info Field</p>
-            <p className="max-md:h-12">Info Field</p>
-            <p className="max-md:h-12">Apply Before</p>
+            <p className="max-md:h-12 overflow-hidden">Role</p>
+            <p className="max-md:h-12 overflow-hidden">CTC</p>
+            <p className="max-md:h-12 overflow-hidden">Location</p>
+            <p className="max-md:h-12 overflow-hidden">Info Field</p>
+            <p className="max-md:h-12 overflow-hidden">Info Field</p>
+            <p className="max-md:h-12 overflow-hidden">Info Field</p>
+            <p className="max-md:h-12 overflow-hidden">Info Field</p>
+            <p className="max-md:h-12 overflow-hidden">Apply Before</p>
 
           </div>
-          <div className="text-black font-semibold flex flex-col gap-2">
-            <p className="max-md:h-12">{data.details.role}</p>
-            <p className="max-md:h-12">{data.details.salary}</p>
-            <p className="max-md:h-12">{data.details.location}</p>
-            <p className="max-md:h-12">{data.details.infoField}</p>
-            <p className="max-md:h-12">{data.details.infoField}</p>
-            <p className="max-md:h-12">{data.details.infoField}</p>
-            <p className="max-md:h-12">{data.details.infoField}</p>
-            <p className="max-md:h-12">{data.submissionDate}</p>
+          <div className="font-semibold flex flex-col gap-2">
+            <p className="max-md:h-12 overflow-hidden">{data.details.role}</p>
+            <p className="max-md:h-12 overflow-hidden">{data.details.salary}</p>
+            <p className="max-md:h-12 overflow-hidden">{data.details.location}</p>
+            <p className="max-md:h-12 overflow-hidden">{data.details.infoField}</p>
+            <p className="max-md:h-12 overflow-hidden">{data.details.infoField}</p>
+            <p className="max-md:h-12 overflow-hidden">{data.details.infoField}</p>
+            <p className="max-md:h-12 overflow-hidden">{data.details.infoField}</p>
+            <p className="max-md:h-12 overflow-hidden">{data.submissionDate}</p>
 
           </div>
         </div>

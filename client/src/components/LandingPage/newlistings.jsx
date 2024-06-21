@@ -4,13 +4,13 @@ import CompanyLogo1 from "@/../public/companyLogo1.png"
 export default function NewListings() {
   return (
     <div>
-      <div className="text-red-500 font-semibold mb-4 text-xl"> 
+      <div className="text-red-500 font-semibold mb-4 text-xl">
         New Listings for you
       </div>
 
-      <div className="flex justify-center gap-3 w-[58vw] overflow-x-scroll max-md:w-[90vw] max-md:justify-normal">
-        {listings.map(item => (
-          <Listing data={item} />
+      <div className="flex gap-3 w-[58vw] overflow-x-scroll max-md:w-[90vw]">
+        {listings.map((item, index) => (
+          <Listing data={item} key={index} />
         ))}
       </div>
 

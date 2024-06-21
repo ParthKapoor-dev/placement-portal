@@ -10,7 +10,7 @@ export default function Listing({ data }) {
   }
   
   return (
-    <div className="p-4 bg-white min-w-[18vw] h-[18vw] max-md:min-w-[60vw] max-md:h-[60vw]">
+    <div className="p-4 bg-white dark:bg-neutral-800 min-w-[18vw] h-fit max-md:min-w-[60vw]">
       <div className="flex gap-2">
         <img src={data.logo} className="h-10" />
         <p className="flex justify-center items-center">
@@ -24,7 +24,7 @@ export default function Listing({ data }) {
           <p>CTC</p>
           <p>Apply Before</p>
         </div>
-        <div className="text-black font-semibold flex flex-col gap-2">
+        <div className=" font-semibold flex flex-col gap-2">
           <p>{data.role}</p>
           <p>{data.salary}</p>
           <p>{data.submissionDate}</p>
