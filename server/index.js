@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use("/", AppRouter);
 
-app.listen(port , async () => {
+app.listen(port || 3000 , async () => {
   try {
     const dbConnected = await connect.MongoDb();
     if (!dbConnected) throw new Error("Server Connection Failed (db Error)");

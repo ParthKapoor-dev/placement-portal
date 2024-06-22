@@ -12,7 +12,7 @@ import useUserContext from "@/hooks/useUserContext";
 
 export const SideNav = ({ links }) => {
   const [selected, setSelected] = useState(0);
-
+``
   return (
     <nav className="h-fit w-fit bg-white rounded px-6 py-4 flex flex-col items-center gap-10 shadow-md">
       <NavItem link={links.home} selected={selected === 0} id={0} setSelected={setSelected}>
