@@ -8,13 +8,13 @@ export default function UpdatesDiv({ jobs }) {
         Latest Updates On Applied Jobs
       </div>
 
-      <div className="bg-white dark:bg-neutral-800 w-[58vw] max-md:w-fit py-6 px-8 flex gap-6 ">
+      <div className="bg-white dark:bg-neutral-800 w-[58vw] max-md:w-fit py-6 px-8 flex gap-4 max-md:px-2 ">
         <div>
-          <img src={jobs.icon} className="h-12 w-full" />
+          <img src={jobs.icon} className="h-12 w-18" />
         </div>
 
         <div>
-          <p className="text-2xl max-md:text-xl">
+          <p className="text-2xl max-md:text-lg">
             {jobs.title}
           </p>
 

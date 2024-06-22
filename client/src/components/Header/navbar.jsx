@@ -29,6 +29,10 @@ export default function Navbar({ setbar , showSidebar }) {
   return (
     <div className="bg-white dark:bg-neutral-800 shadow-md flex h-[10vh] items-center justify-between text-lg max-md:justify-normal max-md:gap-[3rem] max-md:h-[8vh]">
 
+      <div className="absolute z-20 top-[9vh] left-[8vw] bg-[#EC232B] text-white px-4 py-2 shadow-lg rounded-b-lg max-md:top-[7vh] max-md:left-[80vw] max-md:text-sm max-md:p-2">
+        Student
+      </div>
+
       <div className="w-[20vw] max-md:w-fit">
         <img src={ThaparIcon} className="h-[10vh] w-[10vh] max-md:h-[8vh] max-md:w-[8vh]" onClick={handleSidebar} />
       </div>

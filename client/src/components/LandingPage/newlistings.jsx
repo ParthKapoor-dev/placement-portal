@@ -8,7 +8,7 @@ export default function NewListings() {
         New Listings for you
       </div>
 
-      <div className="flex gap-3 w-[58vw] overflow-x-scroll max-md:w-[90vw]">
+      <div className="flex gap-3 w-[58vw] overflow-x-scroll max-md:w-[100vw] pb-4">
         {listings.map((item, index) => (
           <Listing data={item} key={index} />
         ))}
