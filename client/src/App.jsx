@@ -15,7 +15,7 @@ export default function App() {
 
   return (
 
-    <div className="bg-[#F0F0F0] dark:bg-neutral-950 min-h-screen min-w-screen w-fit">
+    <div className="bg-[#F0F0F0] dark:bg-neutral-950 min-h-screen min-w-full w-fit">
       <Navbar showSidebar={showSidebar} setbar={setbar} />
 
       <div className="flex">
