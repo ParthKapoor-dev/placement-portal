@@ -6,7 +6,7 @@ import { useToast } from "../ui/use-toast";
 import ThaparIcon from "@/../public/thapar-icon.png"
 
 
-export default function Navbar({ setbar , showSidebar }) {
+export default function Navbar({ setbar }) {
 
   const { user, dispatch } = useUserContext();
   const { toast } = useToast();
@@ -22,8 +22,7 @@ export default function Navbar({ setbar , showSidebar }) {
   };
 
   function handleSidebar() {
-    if (showSidebar) setbar(false);
-    else setbar(true);
+    setbar(prev => !prev);
   }
 
   return (

@@ -1,7 +1,7 @@
 const express = require("express");
 const connect = require("./src/utils/connect");
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const cors = require("cors");
 const AppRouter = require("./src/Routes");
 
@@ -12,7 +12,9 @@ app.use(express.json());
 
 app.use("/", AppRouter);
 
-app.listen(port || 3000 , async () => {
+console.log(port);
+
+app.listen( port , async () => {
   try {
     const dbConnected = await connect.MongoDb();
     if (!dbConnected) throw new Error("Server Connection Failed (db Error)");
