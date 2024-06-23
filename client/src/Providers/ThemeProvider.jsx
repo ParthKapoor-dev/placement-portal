@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react"
 const Theme = "dark" | "light" | "system";
 
 const initialState = {
-  theme: "system",
+  theme: "light",
   setTheme: () => null,
 }
 
